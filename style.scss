@@ -1,0 +1,241 @@
+@import "base";
+
+header {
+  margin: 40px 0 80px 0;
+
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    .logo {
+      @media (max-width: 420px) {
+        width: 130px;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 60px 80px;
+  text-align: center;
+  @media (max-width: 420px) {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: $very-dark-cyan;
+    margin-bottom: 20px;
+    @media (max-width: 420px) {
+      font-size: 25px;
+    }
+  }
+  p {
+    font-size: 20px;
+    max-width: 590px;
+    margin: 0 auto;
+    color: $very-dark-cyan;
+    @media (max-width: 420px) {
+      font-size: 15px;
+    }
+  }
+  .btn-primary {
+    margin: 30px 0;
+  }
+  .img-wrapper {
+    padding: 50px 60px;
+    width: 1000px;
+    margin: 0 auto;
+    @media (max-width: 420px) {
+      width: 320px;
+      padding: 0;
+      margin: 40px 0;
+    }
+  }
+}
+
+.numbers {
+  margin-bottom: 100px;
+
+  .flex {
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+
+    .number {
+      padding: 40px 0;
+      img {
+        width: 40px;
+      }
+      h2 {
+        font-size: 60px;
+        font-family: $open-sans;
+        color: $very-dark-cyan;
+      }
+      p {
+        color: grey;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.grow {
+  background-color: $very-pale-blue;
+  padding: 50px 0;
+  @media (max-width: 420px) {
+    text-align: center;
+  }
+
+  .flex {
+    @media (max-width: 420px) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.flowing {
+  margin: 150px 0;
+  .flex {
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+  }
+
+  .text {
+    margin-right: 0;
+  }
+}
+
+.users {
+  background-color: $very-pale-blue;
+  padding: 50px 0;
+  .flex {
+    @media (max-width: 420px) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.community {
+  text-align: center;
+  padding: 100px 0;
+  margin: 50px 0;
+
+  h2 {
+    font-size: 40px;
+    color: $very-dark-cyan;
+    margin-bottom: 30px;
+    @media (max-width: 420px) {
+      font-size: 20px;
+    }
+  }
+}
+
+footer {
+  background-color: $very-dark-cyan;
+  color: $very-pale-blue;
+  padding: 50px 0;
+
+  .flex {
+    @media (max-width: 420px) {
+      flex-direction: column-reverse;
+    }
+    .left {
+      max-width: 300px;
+      margin-right: 100px;
+      @media (max-width: 420px) {
+        margin-right: 0;
+      }
+
+      p {
+        line-height: 1.8;
+        font-size: 14px;
+      }
+
+      ul {
+        margin: 25px 0;
+        li {
+          list-style: none;
+          margin-bottom: 20px;
+
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+
+      .social-media {
+        .flex {
+          @media (max-width: 420px) {
+            flex-direction: row;
+          }
+          margin-top: 40px;
+          li {
+            margin-right: 25px;
+
+            a {
+              color: $very-pale-blue;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      max-width: 500px;
+      margin-left: 100px;
+      @media (max-width: 420px) {
+        margin-left: 0;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-family: $open-sans;
+        @media (max-width: 420px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        max-width: 329px;
+        font-size: 14px;
+        margin-bottom: 25px;
+        @media (max-width: 420px) {
+          font-size: 15px;
+          line-height: 1.7;
+        }
+      }
+      input {
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        width: 300px;
+        margin-right: 30px;
+        @media (max-width: 420px) {
+          margin-bottom: 20px;
+          width: 100%;
+          padding: 16px;
+        }
+      }
+      input:focus {
+        outline: none;
+      }
+      .btn-secondary {
+        background-color: $pink;
+        color: $very-pale-blue;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 8px;
+        @media (max-width: 420px) {
+          margin-left: 190px;
+          padding: 15px 35px;
+        }
+      }
+    }
+  }
+}
